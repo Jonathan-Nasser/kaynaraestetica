@@ -59,10 +59,6 @@ body {
   margin-right: 8px;
 }
 
-
-
-
-
 .content {
   display: flex;
   align-items: center;
@@ -79,7 +75,9 @@ body {
 }
 
 .card h2 span {
+  font-size: 1.8rem;
   color: #f1588b;
+  text-shadow: 3px 3px 2px white; /* Sombra para destacar */
 }
 
 .card p {
