@@ -1,0 +1,23 @@
+   <div class="container">
+            <div class="overlay"></div>
+        </div>
+
+.container {
+    position: fixed;
+    /* Para permitir posicionamento */
+    width: 30%;
+    height: 72.6vh;
+    background: url('./img/ambiente1.jfif') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    /* Aplica o desfoque */
+    background-color: rgba(207, 204, 204, 0.2);
+    /*Uma leve cor para destacar o desfoque */
+}

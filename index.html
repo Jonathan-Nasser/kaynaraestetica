@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Kaynara Estética</title>
+</head>
+
+<body>
+
+    <!-- style="background: linear-gradient(to right, #F0D4C9, #FFFFFF)" -->
+
+    <header class="cabecalho">
+
+        <div class="overlay"></div>
+
+        <nav class="container navegacao">
+
+            <div class="logo">
+                Kaynara Ginani Estética
+            </div>
+
+            <ul class="menu">
+
+                <li>
+                    <a href="#destaque">Início</a>
+                </li>
+
+                <li>
+                    <a href="#servicos">Serviços</a>
+                </li>
+
+                <li>
+                    <a href="#sobre">Sobre Nós</a>
+                </li>
+
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+
+                <!-- <li>
+                    <a href="#depoimentos">Depoimentos</a>
+                </li> -->
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+
+
+            <a class="bt_menu"
+                href="https://dottovip.com.br/kaynaraginaniestetica/?fbclid=PAZXh0bgNhZW0CMTEAAadrNPk8-2kdqh5VugpFjeKnNpX4ePWhy76IeB0cPTw2426GWRtbXKSvFMsrnQ_aem_Uew4oNq26WL_i6EBqJ-tgg"
+                target="_blank">Agendar Agora</a>
+
+
+        </nav>
+
+    </header>
+
+    <section class="destaque" id="destaque">
+
+        <div class="container">
+
+            <div class="texto">
+                <h1> <span> AUTOESTIMA</span> se conquista com bons tratamentos estéticos e hábitos diários</h1>
+                <p>Nossa clínica combina o melhor da estética moderna com um acompanhamento inteligente de hábitos que
+                    potencializam seus resultados. Cuidamos da sua pele, da sua rotina de autocuidado e transformamos o
+                    seu olhar com tratamentos faciais que fazem a diferença.
+                </p>
+                <a class="botao"
+                    href="https://dottovip.com.br/kaynaraginaniestetica/?fbclid=PAZXh0bgNhZW0CMTEAAadrNPk8-2kdqh5VugpFjeKnNpX4ePWhy76IeB0cPTw2426GWRtbXKSvFMsrnQ_aem_Uew4oNq26WL_i6EBqJ-tgg"
+                    target="_blank">Agendar Agora</a>
+                <!-- <a href="#">Fale Conosco</a> -->
+            </div>
+
+            <div class="logomarca">
+                <img class="logomarca" src="./arquivos/KG2.png" alt="Logo Kaynara Ginane Estética">
+            </div>
+
+            <div class="imagem">
+                <img src="./src/foto_principal.png" alt="imagem principal">
+            </div>
+        </div>
+    </section>
+
+    <section class="tratamentos secao" id="servicos">
+
+        <div class="marcadagua"></div>        
+
+        <h2><span>Nossos </span><strong>Tratamentos Exclusivos</strong></h2>
+        <p class="subtitulo">
+            Oferecemos uma gama completa de serviços estéticos para realçar sua beleza e bem-estar, com resultados
+            comprovados.
+        </p>
+
+        <div class="cards">
+
+            <div class="linha1">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img class="icone" src="./img/limpeza.PNG" alt="">
+                        <img src="./img/servicos/limpeza.png" class="card-img" alt="limpeza de pele">
+                    </div>
+                    <div class="card-body">
+                        <h3>Limpeza de Pele</h3>
+                        <p>Remoção profunda de impurezas, células mortas e cravos, deixando a pele mais limpa, saudável
+                            e
+                            preparada para absorver ativos.</p>
+                        <a onclick="abrirPopup('limpeza')">Saiba Mais →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img class="icone" src="./img/icon_epilacaofacial.png" alt="">
+                        <img src="./img/servicos/epilacao.PNG" class="card-img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Epilação Facial</h3>
+                        <p>Remoção delicada dos pelos do rosto, promovendo uma pele mais lisa, uniforme e com melhor
+                            acabamento
+                            para a maquiagem.</p>
+                        <a onclick="abrirPopup('epilacao')">Saiba Mais →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img class="icone" src="./img/icon_sobrancelha.png" alt="">
+                        <img src="./img/servicos/desigsobrancelha.PNG" class="card-img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Design de Sobrancelhas</h3>
+                        <p>Modelagem personalizada das sobrancelhas para valorizar o formato natural do seu rosto com
+                            simetria e
+                            leveza.</p>
+                        <a onclick="abrirPopup('design')">Saiba Mais →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img class="icone" src="./img/icon_microsobrancelha.png" alt="">
+                        <img src="./img/servicos/microsobrancelha.PNG" class="card-img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Micropigmentação de Sobrancelha</h3>
+                        <p>Técnica semipermanente que corrige falhas e realça o desenho das sobrancelhas com
+                            naturalidade,
+                            praticidade e durabilidade.</p>
+                        <a onclick="abrirPopup('microsobrancelha')">Saiba Mais →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="linha2">
+                <div class="card">
+                    <div>
+                        <img class="icone" src="./img/lifting.PNG" alt="">
+                        <img src="./img/servicos/lifiting.PNG" class="card-img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lifting de Cílios</h3>
+                        <p>Curvatura e alongamento dos cílios naturais com efeito duradouro, garantindo um olhar
+                            marcante
+                            sem a
+                            necessidade de máscara.</p>
+                        <a onclick="abrirPopup('lifiting')">Saiba Mais →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img class="icone" src="./img/micropigmentacao.PNG" alt="">
+                        <img src="./img/servicos/micropigmentacao.PNG" class="card-img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Micropigmentação Labial</h3>
+                        <p>Reduza o inchaço, melhore a circulação e promova um efeito lifting natural com nossa técnica
+                            especializada de drenagem.</p>
+                        <a onclick="abrirPopup('micropigmentacao')">Saiba Mais →</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img class="icone" src="./img/tintura.PNG" alt="">
+                        <img src="./img/servicos/coloracao.png" class="card-img" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Aplicação de Tintura/Henna</h3>
+                        <p>Coloração dos fios e da pele (com henna) para destacar o desenho das sobrancelhas e
+                            proporcionar
+                            um
+                            efeito mais preenchido e duradouro.</p>
+                        <a onclick="abrirPopup('coloracao')">Saiba Mais →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+
+        <div class="container-sobre">
+
+            <div class="imagem-sobre">
+                <img src="./img/img-sobre.jpeg" alt="Consultório Kaynara Ginani" />
+            </div>
+
+            <div class="conteudo-sobre">
+                <h3>SOBRE NÓS</h3>
+                <h1>Paixão por <span>Cuidar de Você</span></h1>
+                <p>
+                    Na Kaynara Ginani Estética, acreditamos que a verdadeira beleza vem de dentro e se reflete no seu
+                    bem-estar.
+                    Nossa missão é oferecer tratamentos estéticos inovadores e personalizados, em um ambiente acolhedor
+                    e seguro, para que você se sinta confiante e radiante.
+                </p>
+                <p>
+                    Kaynara Ginani, CEO da Empresa, atua no mercado da Estética há mais de 13 anos, graduada em CST e
+                    Cosmética, pós-graduada em Auditoria na Saúde e, atualmente, cursando Saúde Coletiva. </p>
+                <p>
+                    Há 7 anos, especializou nas áreas de sobrancelhas, lábios e cílios, onde encontrou a
+                    verdadeira paixão: elevar a autoestima das pessoas por meio da beleza. E foi com essa paixão que, há
+                    1 ano, decidiu dar um novo passo e embarcar no mundo do empreendedorismo.
+                    Hoje, lidera a empresa com propósito, dedicação e um olhar humanizado, oferecendo serviços e
+                    formações de excelência para quem busca qualidade, cuidado e transformação de verdade.
+                </p>
+
+                <div class="beneficios">
+
+                    <div class="item">
+                        <div class="caixa-icone">
+                            <div class="icone-sobre"><img src="./img/mini-equipe.png" alt=""></div>
+                        </div>
+                        <div class="texto-sobre">
+                            <h4>Equipe Especializada</h4>
+                            <p>Profissionais dedicados</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="caixa-icone">
+                            <div class="icone-sobre"><img src="./img/mini-certificado.png" alt=""></div>
+                        </div>
+                        <div class="texto-sobre">
+                            <h4>Tecnologia Avançada</h4>
+                            <p>Resultados superiores</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="caixa-icone">
+                            <div class="icone-sobre"><img src="./img/mini-coracao.png" alt=""></div>
+                        </div>
+                        <div class="texto-sobre">
+                            <h4>Cuidado Personalizado</h4>
+                            <p>Foco em suas necessidades</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="curso-estetica" id="cursos">
+
+        <div class="container-curso">
+
+            <div class="conteudo-curso">
+
+                <h2>Curso Profissional de Lifting de Cílios</h2>
+
+                <h3>Lifting de Cílios é uma técnica revolucionária que oferece ao fio natural curvatura
+                    e volume sem
+                    precisar de curvex ou rímel. Se deseja aprender a realizar esse procedimento de forma profissional e
+                    segura, meu curso online é a oportunidade perfeita!</h3>
+
+                <p>Aumente suas habilidades e ofereça um serviço diferenciado. Não perca essa oportunidade de se destacar no mercado que mais cresce atualmente.
+                </p>
+
+                <p class="texto-destaque" style="font-size: 20px; font-weight: bold; text-decoration: underline;">
+                    O que você vai aprender:
+                </p>
+
+                <ul style="line-height: 1.8; list-style: none;">
+                    <li>✔️ Técnicas avançadas de lifting de cílios</li>
+                    <li>✔️ Produtos e ferramentas essenciais</li>
+                    <li>✔️ Cuidados e manutenções pós procedimento</li>
+                    <li>✔️ Dicas para maximizar os resultados garantir a satisfação dos clientes</li>
+                    <li>✔️ Suporte com profissionais qualificados</li>
+                </ul>
+
+                <div class="matricula">
+                    <div class="vantagens_curso">
+                        <div class="vantagem">
+                            <img src="./img/img_play.png" alt="">
+                            <p>Assista as aulas <br> <span>quando quiser</span> </p>
+                        </div>
+
+                        <div class="vantagem">
+                            <img src="./img/img_celular.png" alt="">
+                            <p>Assista as aulas pelo <span>aplicativo</span> </p>
+                        </div>
+
+                        <div class="vantagem">
+                            <img src="./img/img_colacao.png" alt="">
+                            <p>Provas para testar o seu conhecimento </p>
+                        </div>
+
+                        <div class="vantagem">
+                            <img src="./img/img_pessoa.png" alt="">
+                            <p>Com vagas <br> <span>Limitadas</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imagem-curso">
+                <img src="./img/servicos/lifiting.PNG" alt="Aluna realizando procedimento estético" />
+            </div>
+
+        </div>
+
+        <div class="detalhe_pagamento">
+            <h2>Adquira seu curso completo agora! </h2>
+            <p> de <span class="de"> R$ 40,99</span> por <span class="por"> R$ 20,00 </span>ou em até 3 x R$
+                7,05</p>
+            <a href="https://pay-v2.herospark.com/lifting-de-cilios-351585" target="_blank"
+                class="botao-matricula">Quero me Matricular</a>
+            <p><i class="fas fa-lock"></i> Compra segura: 30 dias de garantia ou seu dinheiro de volta</p>
+        </div>
+
+    </section>
+
+    <!-- <section class="imagens" id="imagens">
+
+        <h2>Alguns modelos de páginas que você terá acesso</h2>
+
+        <div class="carrossel-container">
+            <div class="carrossel" id="carrossel">
+                <div class="slide"><img src="./img/servicos/lifiting.PNG" alt="Modelo 1" /></div>
+                <div class="slide"><img src="./img/servicos/desigsobrancelha.PNG" alt="Modelo 2" /></div>
+                <div class="slide"><img src="./img/servicos/limpeza.png" alt="Modelo 3" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 4" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 5" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 6" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 8" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 9" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 10" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 11" /></div>
+            </div>
+            <button class="arrow left" onclick="mudarSlide(-1)">❮</button>
+            <button class="arrow right" onclick="mudarSlide(1)">❯</button>
+        </div>
+
+    </section> -->
+
+    <section class="contato" id="contato">
+
+        <h2>Entre em <span>Contato</span> </h2>
+        <p>Tem alguma dúvida ou gostaria de agendar uma avaliação? Estamos aqui para ajudar!</p>
+
+        <div class="container-conteudo">
+
+            <div class="container-form">
+                <form class="form-container">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servico">Serviço de Interesse</label>
+                        <select id="servico" name="servico">
+                            <option value="">Selecione um serviço (opcional)</option>
+                            <option value="sobrancelha">Design de Sobrancelha</option>
+                            <option value="limpeza">Limpeza de Pele</option>
+                            <option value="labios">Micropigmentação Labial</option>
+                            <option value="cilios">Lifting de Cílios</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Sua Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar?"></textarea>
+                    </div>
+
+                    <button class="formulario" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+
+            <div class="info-section">
+
+                <div class="card-contato">
+                    <h3><img class="icon" src="./img/iconContatos.png"> Contatos</h3>
+                    <p class="p-card"><img class="icones" src="./img/iconWhats.png">(84) 99833-4395</p>
+                    <p class="p-card"><img class="icones" src="./img/iconInsta.png"> @kaynaraestetica</p>
+                    <p class="p-card"><img class="icones" src="./img/icon-email.png"> kaynaraestetica@gmail.com</p>
+                </div>
+
+                <div class="card-contato">
+                    <h3>⏰ Horário de Atendimento</h3>
+                    <p>Segunda a Sábado: 8h às 17h<br>
+                        Domingo: Fechado</p>
+                </div>
+
+                <div class="card-contato localizacao">
+                    <h3><img class="icon" src="./img/iconLocalizacao.png" style="width: 20px;">Nossa Localização</h3>
+                    <p>Rua Renato Dantas, 448, Centro<br>
+                        Caicó/RN - CEP: 59300-000</p>
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419.3114614147996!2d-37.09809029043217!3d-6.459314462845719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7afedbb498155d7%3A0x3e7050c1f61f0378!2sR.%20Dr.%20Renato%20Dantas%2C%20448%2C%20Caic%C3%B3%20-%20RN%2C%2059300-000!5e1!3m2!1spt-BR!2sbr!4v1750866529469!5m2!1spt-BR!2sbr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section logo-section">
+                <h2 class="logo">✨ Kaynara Ginani Estética</h2>
+                <p class="slogan">Sua beleza, nossa paixão. Cuidado e tecnologia para realçar o melhor em você.</p>
+            </div>
+
+            <div class="footer-section links-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#sobre">Sobre a Clínica</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-section">
+                <h3>Contato</h3>
+                <p>Rua Renato Dantas, 448<br>Centro, Caicó - RN</p>
+                <p>(84) 99833-4395</p>
+                <p><a href="mailto:kaynaraestetica@gmail.com">kaynaraestetica@gmail.com</a></p>
+            </div>
+
+            <div class="footer-section social-section">
+                <h3>Siga-nos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/kaynaraestetica/" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Kaynara Ginani Estética. Todos os direitos reservados.<br>
+                Desenvolvido com carinho para realçar sua beleza.</p>
+        </div>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="fechar" onclick="fecharPopup()">&times;</span>
+            <h2 id="popup-titulo"></h2>
+            <p id="popup-subtitulo"></p>
+            <p id="popup-texto"></p>
+            <p id="popup-valor"></p>
+            <a class="botao"
+                href="https://dottovip.com.br/kaynaraginaniestetica/?fbclid=PAZXh0bgNhZW0CMTEAAadrNPk8-2kdqh5VugpFjeKnNpX4ePWhy76IeB0cPTw2426GWRtbXKSvFMsrnQ_aem_Uew4oNq26WL_i6EBqJ-tgg"
+                target="_blank" style="border-radius: 8px; padding: 10px 20px;">Agendar Agora</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>

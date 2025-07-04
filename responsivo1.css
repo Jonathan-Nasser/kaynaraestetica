@@ -1,0 +1,116 @@
+/* responsivo.css */
+
+/* Para tablets e telas menores que 1024px */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .destaque .container {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .imagem {
+        margin: 20px auto;
+        top: 0;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .texto h1,
+    .texto p {
+        width: 100%;
+    }
+
+    .cards .linha1,
+    .cards .linha2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-curso {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-curso img {
+        width: 100%;
+        height: auto;
+    }
+
+    .vantagens_curso {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-conteudo {
+        flex-direction: column;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+    }
+
+    .map {
+        grid-column: 1;
+        height: 300px;
+    }
+}
+
+/* Para celulares e telas menores que 768px */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .bt_menu {
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .destaque .container {
+        padding: 20px;
+    }
+
+    .texto h1 {
+        font-size: 2rem;
+    }
+
+    .cards .linha1,
+    .cards .linha2 {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-sobre img {
+        width: 100%;
+        height: auto;
+    }
+
+    .vantagens_curso {
+        grid-template-columns: 1fr;
+    }
+
+    .botao-matricula {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}

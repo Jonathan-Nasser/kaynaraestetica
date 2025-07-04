@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços Odontológicos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="container">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3050/3050151.png" alt="Implantes" class="icon" />
+      <img src="https://img.freepik.com/foto-gratis/dentista-muestra-modelos-implantes-dentales_23-2149141266.jpg?w=740" alt="Reabilitação Oral" class="card-img" />
+      <h3>Reabilitação Oral <br>(Implantes)</h3>
+      <p>
+        Técnica moderna que permite a reabilitação completa do sorriso por meio de implantes dentários. Os implantes devolvem tanto a função quanto a estética, permitindo que você mastigue e sorria com confiança.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Canal" class="icon" />
+      <img src="https://img.freepik.com/foto-gratis/paciente-silla-dental-sonriendo-clinica_23-2148983540.jpg?w=740" alt="Tratamento Endodôntico" class="card-img" />
+      <h3>Tratamento Endodôntico <br>(Canal)</h3>
+      <p>
+        É indicado para dentes com cáries profundas ou infecções que atingem a polpa dentária. Durante o procedimento, o tecido inflamado ou infectado é removido, o interior do dente é limpo e selado.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3456/3456786.png" alt="Restaurações" class="icon" />
+      <img src="https://img.freepik.com/foto-gratis/mujer-sonriente-clinica-dental-recibiendo-tratamiento_23-2148983547.jpg?w=740" alt="Dentística" class="card-img" />
+      <h3>Dentística <br>(Restaurações)</h3>
+      <p>
+        Foco na restauração de dentes danificados por cáries, traumas ou desgaste. Usando materiais de alta qualidade, como resinas compostas, as restaurações imitam perfeitamente a cor e a forma do dente natural.
+      </p>
+    </div>
+  </section>
+</body>
+</html>
+--------------------------------------------------
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #e0f0ff;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.icon {
+  width: 40px;
+  background-color: #1675d1;
+  padding: 10px;
+  border-radius: 12px;
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  z-index: 1;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #1675d1;
+  font-weight: bold;
+  margin: 60px 20px 10px 20px;
+}
+
+p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0 20px;
+}
+
+
+1 - Remoção profunda de impurezas, células mortas e cravos, deixando a pele mais limpa, saudável e preparada para absorver ativos.
+
+Remoção delicada dos pelos do rosto, promovendo uma pele mais lisa, uniforme e com melhor acabamento para a maquiagem.
+
+Modelagem personalizada das sobrancelhas para valorizar o formato natural do seu rosto com simetria e leveza.
+
+Técnica semipermanente que corrige falhas e realça o desenho das sobrancelhas com naturalidade, praticidade e durabilidade.
+
+Curvatura e alongamento dos cílios naturais com efeito duradouro, garantindo um olhar marcante sem a necessidade de máscara.
+
+Reduza o inchaço, melhore a circulação e promova um efeito lifting natural com nossa técnica especializada de drenagem.
+
+Coloração dos fios e da pele (com henna) para destacar o desenho das sobrancelhas e proporcionar um efeito mais preenchido e duradouro.

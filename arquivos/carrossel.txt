@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrossel de Modelos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0c0c1f;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 2em;
+    }
+
+    .carrossel-container {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      padding: 0 50px;
+    }
+
+    .carrossel {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      min-width: 300px;
+      max-width: 350px;
+      margin: 0 10px;
+      background: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .slide img {
+      width: 100%;
+      display: block;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 20px;
+      color: white;
+      z-index: 10;
+    }
+
+    .arrow:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .carrossel-container {
+        padding: 0 20px;
+      }
+
+      .slide {
+        min-width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Alguns modelos de páginas que você terá acesso</h2>
+
+  <div class="carrossel-container">
+    <button class="arrow left" onclick="scrollCarrossel(-1)">&#10094;</button>
+    <div class="carrossel" id="carrossel">
+      <div class="slide"><img src="modelos/modelo1.png" alt="Modelo 1" /></div>
+      <div class="slide"><img src="modelos/modelo2.png" alt="Modelo 2" /></div>
+      <div class="slide"><img src="modelos/modelo3.png" alt="Modelo 3" /></div>
+      <div class="slide"><img src="modelos/modelo4.png" alt="Modelo 4" /></div>
+    </div>
+    <button class="arrow right" onclick="scrollCarrossel(1)">&#10095;</button>
+  </div>
+
+  <script>
+    const carrossel = document.getElementById("carrossel");
+    let scrollAmount = 0;
+
+    function scrollCarrossel(direction) {
+      const slideWidth = carrossel.querySelector(".slide").offsetWidth + 20;
+      scrollAmount += direction * slideWidth;
+      carrossel.scrollTo({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+<div class="slide"><img src="./img/servicos/lifiting.PNG" alt="Modelo 1" /></div>
+                <div class="slide"><img src="./img/servicos/desigsobrancelha.PNG" alt="Modelo 2" /></div>
+                <div class="slide"><img src="./img/servicos/limpeza.png" alt="Modelo 3" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 4" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 5" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 6" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 8" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 9" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 10" /></div>
+                <div class="slide"><img src="./img/servicos/micropigmentacao.PNG" alt="Modelo 11" /></div>

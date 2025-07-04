@@ -1,0 +1,441 @@
+/* TELAS MENORES (celulares) */
+@media (max-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+    }
+
+    .navegacao {
+        display: flex;
+        justify-content: flex-end;
+        /* espaço entre os itens */
+        padding: 0 20px;
+    }
+
+    .logo,
+    .bt_menu {
+        display: none;
+    }
+
+    .menu {
+        gap: 20px;
+
+    }
+
+    .menu li a {
+        font-size: 12px;
+    }
+
+    .destaque .container {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        /* max-width: 768px; */
+    }
+
+    .destaque {
+        padding-top: 380px;
+        height: 630px;
+    }
+
+    .conteudo {
+        width: 100%;
+    }
+
+    .texto h1 {
+        color: #fff; /* cor do texto 01 07 2025 */
+        text-shadow: black 0px 0px 10px; /* Efeito de sombra no texto - 01 07 25 */
+        margin: 0 auto 10px auto;   /* margem do texto 01 07 2025  --> 0 auto*/
+        font-size: 21px; /* tamanho do texto 01 07 2025 */
+        width: 63%; /* largura do texto 01 07 2025 */
+    }
+
+    .texto span {
+        text-shadow: white 0px 0px 10px; /* Efeito de sombra no texto - 01 07 25 */
+        color: rgb(160, 35, 97); /* cor do destaque 01 07 2025*/
+    }
+
+    .texto p {
+        color: black;
+        text-shadow: rgb(240, 236, 236) 0px 0px 10px; /* Efeito de sombra no texto - 01 07 25 */
+        width: 62%;
+        font-size: 16px; /* tamanho do texto 01 07 2025 */
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .botao {
+        padding: 10px 40px;
+        border-radius: 8px;
+    }
+
+    .botao:hover {
+        background-color: #f58ab0;
+        color: #fff;
+    }
+
+    .imagem {
+        position: absolute;
+        top: 70px;
+        bottom: 0;
+        width: 50%;
+    }
+
+    .imagem img {
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    }
+
+    .tratamentos {
+        padding: 20px 15px;
+        width: 100%;
+    }
+
+    .tratamentos h2 {
+        font-size: 28px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+   
+
+    .cards .linha1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cards .linha2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .card p {
+        font-size: 14px;
+        padding: 0 0 10px 10px;
+        margin: 0;
+    }
+
+    .card-img {
+        width: 100px;
+    }
+
+    .card-body {
+        width: 100%;
+    }
+
+    .card-img-container {
+        display: flex;
+        object-fit: cover;
+        /* Ajusta a imagem para preencher o espaço */
+    }
+
+    .card h3 {
+        padding: 0 0 10px 10px;
+        margin: 0;
+    }
+
+    .card a {
+        padding: 0 0 0 10px;
+        margin: 0;
+    }
+
+    .icone {
+        display: none;
+        width: 40px;
+        top: 120px;
+        left: 0;
+        /* height: 30px; */
+    }
+
+    .sobre {
+        padding: 20px 0;
+    }
+
+    .imagem-sobre {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .imagem-sobre img {
+        width: 70%;
+        height: auto;
+    }
+
+    .container-sobre {
+        justify-items: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .conteudo-sobre {        
+        min-width: 0;
+    }
+
+    .conteudo-sobre h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .conteudo-sobre h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .conteudo-sobre p {
+        padding: 0 10px;
+        font-size: 14px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .beneficios {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .item {
+        display: flex;
+
+
+    }
+
+    .caixa-icone {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: left;
+        width: 50%;
+    }
+
+    .icone-sobre {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .texto-sobre {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .texto-sobre h4 {
+        font-size: 18px;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .texto-sobre p {
+        text-align: left;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .curso-estetica {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px 10px;
+        gap: 20px;
+
+    }
+
+    .container-curso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        gap: 0;
+    }
+
+    .conteudo-curso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-width: 0;
+        margin-top: 400px;
+    }
+
+    .curso-estetica h2 {
+        padding: 45px 0 0 0;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .curso-estetica h3 {
+        font-size: 14px;
+        margin: 10px 0;
+        
+    }
+
+    .curso-estetica p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .texto-destaque {
+        padding: 10px 0;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .matricula {
+        width: 100%;
+    }
+
+    .vantagens_curso {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        align-items: center;
+    }
+
+    .imagem-curso  {        
+        position: absolute;
+        /* top: 19px; */
+        height: auto;
+        /* object-fit: cover; */
+        border-radius: 8px;
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+
+    }
+
+    .imagem-curso img {
+        width: 350px;
+        height: auto;
+        border-radius: 16px;
+    }
+
+.detalhe_pagamento h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+    .detalhe_pagamento p .por {
+    font-size: 25px;    
+}
+
+    .botao-matricula {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 14px 50px;
+    }
+
+    .curso-estetica p {
+        font-size: 12px;
+    }
+
+    .contato {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    
+    .curso-estetica h3, .curso-estetica p {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    .contato h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .contato p {
+        font-size: 12px;
+        margin: 10px 0;
+    }
+
+    .container-conteudo {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 10px 0; 
+    }
+   
+    .conteudo h2 {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .subtitulo {
+        width: 100%;
+        max-width: 600px;
+        font-size: 16px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .container-form {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 20px 10px;
+
+    }
+
+    .form-row {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .contato p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+
+}

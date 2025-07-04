@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  /* background-repeat: no-repeat; */
+  font-family: 'Arial', sans-serif;
+  /* background-color: #1e2a1f; */
+  color: #fff;
+  padding: 20px;
+}
+
+.fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/fundo_linkbio2.png');
+  /* background-size: cover; */
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  opacity: 0.5;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card base */
+.card {
+  background-image: url(img/fundo_card.jfif);
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff10;
+  border-radius: 15px;
+  padding: 20px;
+  color: #fff;
+  backdrop-filter: blur(5px);
+  /* overflow: hidden; */
+}
+
+.icon_whats {
+  top: 118px;
+  left: -10px;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+
+
+
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Textos */
+.card h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card h2 span {
+  color: #f1588b;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  color: #f1f1f1;
+}
+
+/* Imagens */
+.image {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Botão WhatsApp */
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 35px;
+  padding: 10px 15px;
+  background-color: #0db854;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Tags de serviços */
+.tags {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: auto auto;
+  /* ou 1fr 1fr para colunas iguais */
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tags span {
+  background-color: #e5e5e5;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.tags .destaque {
+  background-color: #c55f4e;
+  color: #fff;
+}
+
+.card h2, .card p {
+  color: black;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image {
+    align-self: center;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+
+  .whatsapp-button {
+    width: 100%;
+    text-align: center;
+  } 
+
+}
