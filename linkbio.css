@@ -87,8 +87,7 @@ h1 {
 
 .secao {
   max-height: 150px;
-  display: flex;
-  align-items: flex-start;
+  flex: 1 1 100%;
   background: linear-gradient(to right, #ff4dc4, #ff0099);
   border-radius: 15px;
   padding: 20px 15px;
@@ -100,16 +99,15 @@ h1 {
 .secao h2 {
   font-size: 1.5rem;
   margin-bottom: 8px;
-  text-align: left;
   font-family: 'Cormorant Garamond', serif;
 }
 
 .secao p {
   font-size: 0.85rem;
   width: 220px;
-  text-align: left;
   font-family: 'montserrat', sans-serif;
 }
+
 
 .agenda {
   position: absolute;
@@ -124,19 +122,72 @@ h1 {
 .agendar {
   margin-top: 10px;
   border-radius: 10px;
+  align-items: flex-start;
 }
 
-.notebook {
-  width: 200px;
+.agendar:hover {
+  background-color: #ff0099;
+}
+
+.agendar h2,
+.agendar p {
+  text-align: left;
+}
+
+.secao-imagem {
+  width: 120px;
   position: absolute;
-  left: -5px;
-  transform: rotate(8deg);
-  top: -2px;
+  left: -12px;
+  top: -22px;
 }
 
-.site p {
-  font-size: 0.8rem;
-  text-align: right;
+.tratamentos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.tratamentos span {
+  align-items: center;
+  background-color: #813e6d;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+#tratamento, .tratamentos .destacar {
+  text-align: center;
+}
+
+
+.site,
+.servicos {
   margin-top: 10px;
+  border-radius: 10px;
+  align-items: flex-end;
 }
 
+.site h2,
+.site p,
+.conteudo h2,
+.conteudo-p,
+.servicos span {
+  text-align: right;
+  width: 200px;
+}
+
+.site {
+  margin-top: 10px;
+  border-radius: 10px;
+  align-items: flex-end;
+}
+
+
+.secao-imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
