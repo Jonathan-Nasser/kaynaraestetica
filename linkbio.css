@@ -22,12 +22,10 @@ body {
 }
 
 .imagem-principal {
-  max-width: 400px;
   display: flex;
-  margin: 20px;
+  /* margin: 20px; */
   position: absolute;
-  width: 80%;
-  /* max-height: 300px; */
+  max-height: 400px;
   object-fit: cover;
   border-radius: 15px;
   mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
@@ -124,15 +122,21 @@ h1 {
 }
 
 .agendar {
-  width: 250px;
   margin-top: 10px;
   border-radius: 10px;
 }
 
 .notebook {
-  width: 250px;
+  width: 200px;
   position: absolute;
-  left: 160px;
-  transform: rotate(15deg);
-  top: -90px;
+  left: -5px;
+  transform: rotate(8deg);
+  top: -2px;
 }
+
+.site p {
+  font-size: 0.8rem;
+  text-align: right;
+  margin-top: 10px;
+}
+
