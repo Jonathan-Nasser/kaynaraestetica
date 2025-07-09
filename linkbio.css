@@ -172,34 +172,32 @@ h1 {
   text-align: right;
 }
 
+.servicos-tratamentos {
+  padding-right: 10px;
+}
+
 .tratamentos {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  gap: 8px;
-  /* margin-left: 35px; */
-  /* margin-top: 15px; */
+  gap: 6px;  
 }
 
 .tratamentos span {
-  width: 115px;
+  width: 120px;
   background-color: #813e6d;
   padding: 6px 2px;
   border-radius: 20px;
   font-size: 8px;
+  
 }
 
 .tratamento {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  /* justify-content: center; */
-  /* width: 100%; */
-  max-width: 120px;
-  /* margin-top: 10px; */
-  /* border-radius: 10px; */
+ 
 }
 
 .site,
