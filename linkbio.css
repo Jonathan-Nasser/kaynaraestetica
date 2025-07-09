@@ -138,17 +138,33 @@ h1 {
   text-align: left;
 }
 
-.servicos-imagem {
-  position: absolute;
-  left: 152px;
-  top: 640px;
+.servicos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
-.servicos-imagem img {
-  
-  width: 140px;
+.imagem-servicos {
+  width: 100%;  
+  border-radius: 10px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.imagem-servicos .img {
+  position: relative;
+  left: -20px;
+  top:-45px;
+  width: 120px;
   height: auto;
   border-radius: 10px;
+}
+.conteudo {
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
 }
 
 .conteudo h2 {
@@ -157,22 +173,35 @@ h1 {
 }
 
 .tratamentos {
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   gap: 8px;
   /* margin-left: 35px; */
-  padding-left: 62px;
   /* margin-top: 15px; */
 }
 
 .tratamentos span {
+  width: 115px;
   background-color: #813e6d;
-  padding: 6px 10px;
+  padding: 6px 2px;
   border-radius: 20px;
   font-size: 8px;
 }
+
+.tratamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  /* justify-content: center; */
+  /* width: 100%; */
+  max-width: 120px;
+  /* margin-top: 10px; */
+  /* border-radius: 10px; */
+}
+
 .site,
 .servicos {
   margin-top: 10px;
