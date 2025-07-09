@@ -90,31 +90,31 @@ h1 {
   flex: 1 1 100%;
   background: linear-gradient(to right, #ff4dc4, #ff0099);
   border-radius: 15px;
-  padding: 20px 15px;
+  padding: 10px 10px;
   margin: 25px 0;
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .secao h2 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-bottom: 8px;
   font-family: 'Cormorant Garamond', serif;
 }
 
 .secao p {
-  font-size: 0.85rem;
+  font-size: 0.89rem;
   width: 220px;
   font-family: 'montserrat', sans-serif;
 }
 
 
 .agenda {
-  position: absolute;
-  left: 160px;
+  position: relative;
+  left: 120px;
   transform: rotate(15deg);
-  top: -90px;
-  width: 250px;
+  top: -200px;
+  width: 230px;
   margin-top: 10px;
   border-radius: 10px;
 }
@@ -141,42 +141,40 @@ h1 {
   top: -22px;
 }
 
+.conteudo h2 {
+  width: 100%;
+  text-align: right;
+}
+
 .tratamentos {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  
   gap: 8px;
-  margin-top: 15px;
+  margin-left: 35px;
+  /* margin-top: 15px; */
 }
 
+
+
 .tratamentos span {
-  align-items: center;
   background-color: #813e6d;
   padding: 6px 10px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 10px;
 }
-
-#tratamento, .tratamentos .destacar {
-  text-align: center;
-}
-
-
 .site,
 .servicos {
   margin-top: 10px;
   border-radius: 10px;
-  align-items: flex-end;
 }
 
 .site h2,
-.site p,
-.conteudo h2,
-.conteudo-p,
-.servicos span {
-  text-align: right;
-  width: 200px;
+.site p
+{
+text-align: right;
+width: 200px;
 }
 
 .site {
