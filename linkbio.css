@@ -18,12 +18,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 412px;
+  max-width: 768px;
   margin: auto;
   background-color: #24001a;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0 0 20px #00000088;
+  box-shadow: 0 0 20px #00000088; /* Adiciona uma sombra suave */
 }
 
 .imagem-principal {
@@ -92,8 +92,9 @@ h1 {
 
 .secao {
   display: flex;
+  justify-content: space-around;
   width: 100%;
-  max-width: 412px;
+  /* max-width: 412px; */
   max-height: 150px;
   flex: 1 1 100%;
   background: linear-gradient(to right, #ff4dc4, #ff0099);
@@ -174,7 +175,7 @@ h1 {
 
 .conteudo {
   width: 100%;
-  max-width: 240px;
+  /* max-width: 240px; */
   display: flex;
   flex-direction: column;
 }
