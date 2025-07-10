@@ -92,8 +92,8 @@ h1 {
 
 .secao {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
+  max-width: 412px;
   max-height: 150px;
   flex: 1 1 100%;
   background: linear-gradient(to right, #ff4dc4, #ff0099);
@@ -102,14 +102,12 @@ h1 {
   margin: 25px 0;
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-   
-
-
 }
 
 .secao h2 {
   font-size: 1.7rem;
   margin-bottom: 8px;
+  padding-right: 10px;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -119,23 +117,29 @@ h1 {
   font-family: 'montserrat', sans-serif;
 }
 
+.agendar {
+   display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-radius: 10px;
+  
+}
+
+.imagem-agenda {
+  width: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
 .agenda {
-  position: relative;
-  left: 165px;
-  transform: rotate(15deg);
-  top: -200px;
-  width: 230px;
-  margin-top: 10px;
+   position: relative;
+  left: -60px;
+  top: -95px;
+  width: 250px;
+  height: auto;
   border-radius: 10px;
 }
 
-.agendar,
-.site {
-  margin-top: 10px;
-  border-radius: 10px;
-  align-items: flex-start;
-}
 
 .agendar:hover {
   background-color: #ff0099;
@@ -156,21 +160,21 @@ h1 {
 .imagem-servicos {
   width: auto;
   border-radius: 10px;
-  margin-top: 20px;
+  padding: 0;
 }
 
 .imagem-servicos .img {
-  position: relative;
-  left: -20px;
-  top: -45px;
-  width: 120px;
-  height: auto;
-  border-radius: 10px;
+      position: relative;
+    left: -20px;
+    top: -26px;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
 }
 
 .conteudo {
   width: 100%;
-  max-width: 220px;
+  max-width: 240px;
   display: flex;
   flex-direction: column;
 }
@@ -186,7 +190,7 @@ h1 {
 }
 
 .tratamentos {
-  width: 100%;
+  /* width: 100%; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
@@ -233,7 +237,7 @@ h1 {
 }
 
 .notebook {
-padding-right: 8px;
+  padding-right: 8px;
   width: 150px;
   overflow: hidden;
 }
